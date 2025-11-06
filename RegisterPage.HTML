@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SmartBudget Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f8f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95em;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #c0392b;
+    }
+
+    .register-container {
+      background-color: white;
+      padding: 60px 40px 40px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2bb673;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+
+    button.register-submit {
+      width: 100%;
+      background-color: #2bb673;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    button.register-submit:hover {
+      background-color: #1a8f55;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="back-button" onclick="window.location.href='LoginPage.html'">Back</button>
+
+  <div class="register-container">
+    <h2>Register For SmartBudget</h2>
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="register-submit">Register</button>
+    </form>
+  </div>
+</body>
+
+</html>
