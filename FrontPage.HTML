@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SmartBudget</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f5f8f7;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #2bb673;
+    }
+
+    h1 span {
+      color: #1a8f55;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    button {
+      background-color: #2bb673;
+      color: white;
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #1a8f55;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Register button style */
+    #registerbutton {
+      background-color: #e74c3c;
+    }
+
+    #registerbutton:hover {
+      background-color: #c0392b;
+    }
+
+    #registerbutton:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to <span>SmartBudget</span></h1>
+  <p>Manage your money smarter — track, save, and achieve your goals.</p>
+
+  <button onclick="window.location.href='LoginPage.html'">Login</button>
+  <button onclick="window.location.href='RegisterPage.html'" id="registerbutton" type="button">Register</button>
+</body>
+
+</html>
