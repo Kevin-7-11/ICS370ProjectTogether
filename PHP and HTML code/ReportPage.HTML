@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SmartBudget Reports</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f8f7;
+      margin: 0;
+      padding: 0;
+    }
+    /*header styling*/
+    header {
+      background-color: #1a8f55;/*Background color*/
+      color: white;/*Text color*/
+      padding: 20px;/*Adds spacing*/
+      text-align: center;/*centers text*/
+      font-size: 1.8em;
+      font-weight: bold;/*bolds the text*/
+    }
+    /*Reports styling*/
+    .reports-container {
+      width: 90%;/*Adjusting width for the container*/
+      margin: 40px auto;
+      background-color: white;/*Coloring for the background container*/
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Adds shadow for the container*/
+      overflow-x: auto;
+      padding: 20px;/*Adds spacing*/
+    }
+    /*table spacing*/
+    table {
+      width: 100%;
+      border-collapse: collapse; /*Removes borders*/
+      margin-top: 10px;
+    }
+
+    th,/*Adjusts the style of the table header, and rows*/
+    td {
+      text-align: center;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    /*Adjusts the style of the table header*/
+    th {
+      background-color: #1a8f55;
+      color: white;/*Text color*/
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e8f5e9;
+    }
+    /*Back button styling*/
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95em;
+      transition: background-color 0.3s;
+    }
+    /*On hover it changes the back button color*/
+    .back-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Your Reports</header>
+
+  <button class="back-button" onclick="window.location.href='MainPage.html'">Back</button>
+  <!--Back button takes them back to main page HTML file-->
+
+  <div class="reports-container"><!--Gives the tables a class called reports container-->
+    <table><!--Table for the reports-->
+      <tr>
+        <th>Report ID</th><!--Hard coded table values-->
+        <th>User ID</th>
+        <th>Type</th>
+        <th>Report Date</th>
+        <th>Total Income</th>
+        <th>Total Expenses</th>
+        <th>Final Balance</th>
+      </tr>
+      <tr>
+        <td>001</td><!--Hard coded table values-->
+        <td>U123</td>
+        <td>Monthly Summary</td>
+        <td>2025-11-01</td>
+        <td>$4,200</td>
+        <td>$2,100</td>
+        <td>$2,100</td>
+      </tr>
+      <tr>
+        <td>002</td><!--Hard coded table values-->
+        <td>U123</td>
+        <td>Quarterly Report</td>
+        <td>2025-09-30</td>
+        <td>$12,400</td>
+        <td>$6,300</td>
+        <td>$6,100</td>
+      </tr>
+      <tr>
+        <td>003</td><!--Hard coded table values-->
+        <td>U123</td>
+        <td>Yearly Report</td>
+        <td>2025-12-31</td>
+        <td>$50,000</td>
+        <td>$30,000</td>
+        <td>$20,000</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
