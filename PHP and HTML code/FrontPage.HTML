@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SmartBudget</title>
+
+  <style>
+    /*This is the style for the body*/
+    body { 
+      font-family: Arial, sans-serif; /*Font style*/
+      text-align: center; /*Positioning*/
+      margin-top: 100px; /*Spacing*/
+      background-color: #f5f8f7; /*Background color*/
+    }
+
+    /*Styling for the header*/
+    h1 {
+      font-size: 3em;
+      color: #2bb673; /*Text color*/
+    }
+
+    /*Styling for the "smartbudget" header*/
+    h1 span {
+      color: #1a8f55; /*Text color*/
+    }
+
+    /*Styling for the intro message*/
+    p {
+      color: #555; /*Text color*/
+      font-size: 1.1em;
+      margin-bottom: 40px; /*Spacing*/
+    }
+
+    button {
+      background-color: #2bb673; /*Background color*/
+      color: white; /*Text color*/
+      font-size: 1.1em;
+      padding: 12px 28px; /*Spacing for the buttons*/
+      border: none; /*Removes border for both buttons*/
+      border-radius: 8px; /*Rounds out both buttons*/
+      cursor: pointer; /*Changes cursor style when hovering*/
+      transition: background-color 0.3s, transform 0.2s; 
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #1a8f55;
+      transform: scale(1.05); /*Ups the scale when hovering over*/
+    }
+
+    button:active {
+      transform: scale(0.98); /*Decreases scale slightly when activated*/
+    }
+
+    /*Register button style*/
+    #registerbutton {
+      background-color: #e74c3c;
+    }
+    /*Register button hover color change*/
+    #registerbutton:hover {
+      background-color: #c0392b;
+    }
+    /*Decreases scale slightly when activated*/
+    #registerbutton:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to <span>SmartBudget</span></h1> <!--Title for the page-->
+  <p>Manage your money smarter — track, save, and achieve your goals.</p> <!--Introduction for the page-->
+
+  <button onclick="window.location.href='LoginPage.html'">Login</button><!--Login button which redirects to loginpage-->
+  <button onclick="window.location.href='RegisterPage.html'" id="registerbutton" type="button">Register</button>
+  <!--Register button that redirects to register page-->
+</body>
+
+</html>
