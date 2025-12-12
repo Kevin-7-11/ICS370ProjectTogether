@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Report - SmartBudget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f8f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Back button (top-left corner of the page) */
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a8f55;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        /* Form container */
+        .form-card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Form labels + inputs */
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 12px 0 6px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        /* Submit button */
+        button[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #1a8f55;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #157347;
+        }
+    </style>
+</head>
+<body>
+
+<button class="back-button" onclick="window.location.href='ReportPage.php'">Back</button>
+
+<header>Create Report</header>
+
+<div class="form-card">
+    <form action="AddingReport.php" method="POST">
+
+        <label>Report Type:</label>
+        <input type="text" name="report_type" required>
+
+        <label>Start Date:</label>
+        <input type="date" name="start_date" required>
+
+        <label>End Date:</label>
+        <input type="date" name="end_date" required>
+
+        <label>Total Income:</label>
+        <input type="number" step="0.01" name="total_income" required>
+
+        <label>Total Expenses:</label>
+        <input type="number" step="0.01" name="total_expenses" required>
+
+        <button type="submit">Submit Report</button>
+
+    </form>
+</div>
+
+</body>
+</html>

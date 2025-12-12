@@ -4,22 +4,23 @@
 <head>
   <title>Logged Out - SmartBudget</title>
   <style>
+    /*This is the style for the body*/
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif;/*Font*/
       background-color: #f5f8f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: flex;/*Displays the body in the middle of the page*/
+      justify-content: center;/*Center contents*/
+      align-items: center;/*Center items*/
       height: 100vh;
       margin: 0;
-      text-align: center;
+      text-align: center;/*Aligns text to the center*/
     }
-
+    /*This is the style for the box containing the logout elements*/
     .logout-container {
       background-color: white;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);/*Adds a small shadow to the box*/
       width: 350px;
     }
 
@@ -53,9 +54,9 @@
 
 <body>
   <div class="logout-container">
-    <h2>You have been logged out</h2>
+    <h2>You have been logged out</h2> <!--Text informing user-->
     <p>Thank you for using SmartBudget. You can log back in to continue managing your budget.</p>
-    <button onclick="window.location.href='LoginPage.html'">Log Back In</button>
+    <button onclick="window.location.href='LoginPage.html'">Log Back In</button><!--Log back in button that redirects to login page-->
   </div>
 </body>
 
